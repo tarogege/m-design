@@ -21,7 +21,8 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "m-design": ["./src/index.ts"]
-    }
+    },
+    "type": ["vitest/globals"]
   },
   "include": ["src"]
 }

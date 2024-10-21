@@ -10,4 +10,8 @@ export default defineConfig({
       "m-design": path.resolve(__dirname, "./src/index.ts"),
     },
   },
+  test: {
+    globals: true,
+    environment: "jsdom",
+  },
 });

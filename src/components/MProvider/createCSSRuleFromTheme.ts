@@ -14,11 +14,11 @@ export const createCSSRuleFromTheme = (
 ) => {
   if (theme) {
     const cssVars = (Object.keys(theme) as (keyof typeof theme)[]).reduce(
-      (result, current) => `${result}--${current}: ${theme[current]};`,
+      (result, current) => `${result}--${current}: ${theme[current]}; `,
       ""
     );
-    return `.${selector}{${cssVars}}`;
+    return `.${selector} { ${cssVars} }`;
   }
 
-  return `.${selector}{}`;
+  return `.${selector} {}`;
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Theme } from "m-design";
+import { Theme, webLightTheme } from "m-design";
 import { useStyles } from "./useStyles.styles";
 
 type ThemeProviderValue = Theme | Partial<Theme> | undefined;
@@ -14,7 +14,7 @@ export type MProviderProps = React.HTMLAttributes<
 const MProvider = ({
   children,
   className,
-  theme,
+  theme = webLightTheme,
   ...restProps
 }: MProviderProps) => {
   // 1.将theme 放到context里面

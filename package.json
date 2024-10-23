@@ -1,13 +1,27 @@
 {
   "name": "maodesign",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
+  "author": "maomao",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarogege/m-design"
+  },
+  "main": "dist/maodesign.cjs.js",
+  "module": "dist/maodesign.es.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build && tsc -b",
     "lint": "eslint .",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6060",
+    "storybook": "storybook dev -p 6006",
     "sk": "pnpm storybook",
     "sk-docs": "storybook dev --docs ",
     "sk-build": "storybook build --docs",
@@ -42,8 +56,9 @@
     "eslint-plugin-storybook": "^0.8.0",
     "jsdom": "^24.1.1",
     "storybook": "^8.2.4",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vite-plugin-dts": "^4.3.0",
     "vitest": "^2.0.5"
   }
 }

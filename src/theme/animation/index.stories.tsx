@@ -1,10 +1,10 @@
 import { makeStyles } from "@griffel/react";
+import React from "react";
 import {
   teamsLightTheme as theme,
   DurationTokens,
   CurveTokens,
 } from "m-design";
-import { useState } from "react";
 
 const meta = {
   title: "主题/animation",
@@ -46,7 +46,7 @@ const useStyles = makeStyles({
 });
 
 export const AnimationDurations = () => {
-  const [animationEnable, setAnimationEnable] = useState(true);
+  const [animationEnable, setAnimationEnable] = React.useState(true);
   const styles = useStyles();
   const durationTokens = Object.keys(theme).filter((themeName) =>
     themeName.startsWith("duration")
@@ -87,7 +87,7 @@ export const AnimationDurations = () => {
 };
 
 export const AnimationCurves = () => {
-  const [animationEnable, setAnimationEnable] = useState(true);
+  const [animationEnable, setAnimationEnable] = React.useState(true);
   const styles = useStyles();
   const curveTokens = Object.keys(theme).filter((themeKey) =>
     themeKey.startsWith("curve")

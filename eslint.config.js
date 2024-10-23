@@ -25,6 +25,7 @@ export default tseslint.config(
       ],
       "storybook/default-exports": "off",
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
     },
   }
 );

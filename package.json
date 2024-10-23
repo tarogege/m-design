@@ -11,6 +11,7 @@
     "storybook": "storybook dev -p 6060",
     "sk": "pnpm storybook",
     "sk-docs": "storybook dev --docs ",
+    "sk-build": "storybook build --docs",
     "test": "vitest"
   },
   "dependencies": {

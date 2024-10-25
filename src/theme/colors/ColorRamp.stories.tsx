@@ -1,5 +1,5 @@
 import { TinyColor } from "@ctrl/tinycolor";
-import { useEffect, useRef } from "react";
+import React from "react";
 
 export interface ColorRampItemProps {
   //  color name
@@ -8,8 +8,8 @@ export interface ColorRampItemProps {
   value?: string | number;
 }
 export const ColorRampItem = ({ name, value }: ColorRampItemProps) => {
-  const divRef = useRef(null!);
-  useEffect(() => {
+  const divRef = React.useRef(null!);
+  React.useEffect(() => {
     // 这里使用了计算属性，计算了实际的背景颜色，因为value的值可能有多种情况 rgb hxl white 或者自定义变量，通过computedStyle可以统一处理
     const computedStyle = window.getComputedStyle(divRef.current);
     const bgColor = computedStyle.getPropertyValue("background-color");

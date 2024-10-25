@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import React from "react";
 import { ColorRampItem } from "./ColorRamp.stories";
 import {
   webLightTheme,
@@ -49,10 +49,10 @@ const tokens: Array<keyof Theme> = (
 
 export const Colors = () => {
   const styles = useStyles();
-  const [colorTokenResult, setColorTokenResult] = useState(tokens);
-  const [inputValue, setInputValue] = useState("");
+  const [colorTokenResult, setColorTokenResult] = React.useState(tokens);
+  const [inputValue, setInputValue] = React.useState("");
 
-  const searchTokens = (newValue) => {
+  const searchTokens = (newValue: any) => {
     const searchResult = tokens.filter(
       (colorName) =>
         colorName.toLowerCase().includes(newValue) ||
@@ -71,8 +71,8 @@ export const Colors = () => {
     220
   );
 
-  const onInputChange = useCallback(
-    (e) => {
+  const onInputChange = React.useCallback(
+    (e: any) => {
       const newValue = e.target.value;
       setInputValue(newValue);
       searchTokenDebounce(newValue.trim().toLowerCase());
@@ -145,8 +145,8 @@ export const Colors = () => {
 };
 
 const useDebounce = (fn: (...args: unknown[]) => void, duration: number) => {
-  const timeoutRef = useRef(0);
-  return useCallback(
+  const timeoutRef = React.useRef(0);
+  return React.useCallback(
     (...args: unknown[]) => {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = window.setTimeout(() => {

@@ -4,5 +4,5 @@ export const Custom: any = {
   args: {
     label: "maomao button",
   },
-  render: (args) => <Button {...args}></Button>,
+  render: (args: any) => <Button {...args}></Button>,
 };

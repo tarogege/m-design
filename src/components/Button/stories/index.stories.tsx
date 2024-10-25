@@ -2,10 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 import { Button } from "m-design";
 import { Custom } from "./Custom.stories";
+// @ts-ignore
 import CustomSource from "./Custom.stories?raw";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
+const meta: any = {
   title: "Example/Button",
   component: Button,
   parameters: {

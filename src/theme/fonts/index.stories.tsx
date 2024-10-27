@@ -5,7 +5,7 @@ import {
   FontWeightTokens,
   LineHeightTokens,
   teamsLightTheme as theme,
-} from "m-design";
+} from "maodesign";
 
 const meta = {
   title: "主题/fonts",
@@ -39,7 +39,7 @@ export const FontSize = () => {
       {fontSizeTokens.map((styleKey) => [
         <div key={styleKey}>{styleKey}</div>,
         <div key={`${styleKey}-demo`} style={{ fontSize: theme[styleKey] }}>
-          m-design
+          maodesign
         </div>,
       ])}
     </div>
@@ -57,7 +57,7 @@ export const FontWeight = () => {
       {fontWeightTokens.map((styleKey) => [
         <div key={styleKey}>{styleKey}</div>,
         <div key={`${styleKey}-demo`} style={{ fontWeight: theme[styleKey] }}>
-          m-design
+          maodesign
         </div>,
       ])}
     </div>
@@ -75,7 +75,7 @@ export const FontFamily = () => {
       {fontFamilyTokens.map((styleKey) => [
         <div key={styleKey}>{styleKey}</div>,
         <div key={`${styleKey}-demo`} style={{ fontFamily: theme[styleKey] }}>
-          m-design 1234
+          maodesign 1234
         </div>,
       ])}
     </div>
@@ -96,7 +96,7 @@ export const LineHeight = () => {
           key={`${styleKey}-demo`}
           style={{ lineHeight: theme[styleKey], backgroundColor: "#eee" }}
         >
-          m-design 1234
+          maodesign 1234
         </div>,
       ])}
     </div>

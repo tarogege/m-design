@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 
-import { Header } from "m-design";
+import { Header } from "maodesign";
 
 const meta: any = {
   title: "Example/Header",

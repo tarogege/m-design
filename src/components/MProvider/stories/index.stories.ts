@@ -1,4 +1,4 @@
-import { MProvider } from "m-design";
+import { MProvider } from "maodesign";
 import { Meta, StoryObj } from "@storybook/react";
 import { Default } from "./default.stories";
 // @ts-expect-error - required for ts

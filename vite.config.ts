@@ -10,10 +10,10 @@ function resolve(str: string) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ rollupTypes: true })],
+  plugins: [react(), dts({})],
   resolve: {
     alias: {
-      "m-design": path.resolve(__dirname, "./src/index.ts"),
+      maodesign: path.resolve(__dirname, "./src/index.ts"),
     },
   },
   test: {

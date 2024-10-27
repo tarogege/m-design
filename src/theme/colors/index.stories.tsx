@@ -7,7 +7,7 @@ import {
   teamsDarkTheme,
   teamsHighContrastTheme,
   Theme,
-} from "m-design";
+} from "maodesign";
 import { makeStyles } from "@griffel/react";
 
 const theme = {

@@ -1,4 +1,4 @@
-import { PartialTheme } from "m-design";
+import { PartialTheme } from "maodesign";
 import { createCSSRuleFromTheme } from "../createCSSRuleFromTheme";
 
 describe("test formate css rule", () => {

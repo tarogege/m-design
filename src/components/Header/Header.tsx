@@ -1,4 +1,4 @@
-import { Button } from "m-design";
+import { Button } from "maodesign";
 import "./header.css";
 
 type User = {

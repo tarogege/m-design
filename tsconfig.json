@@ -24,7 +24,7 @@
     "declaration": true,
     "declarationDir": "dist",
     "paths": {
-      "m-design": ["./src/index.ts"]
+      "maodesign": ["./src/index.ts"]
     }
   },
   "include": ["src"]

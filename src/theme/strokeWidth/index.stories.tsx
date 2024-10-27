@@ -1,4 +1,4 @@
-import { StrokeWidthTokens, teamsLightTheme as theme } from "m-design";
+import { StrokeWidthTokens, teamsLightTheme as theme } from "maodesign";
 
 const meta = {
   title: "主题/strokeWidth",

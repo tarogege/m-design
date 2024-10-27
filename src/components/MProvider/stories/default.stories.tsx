@@ -7,7 +7,7 @@ import {
   teamsDarkTheme,
   webDarkTheme,
   teamsHighContrastTheme,
-} from "m-design";
+} from "maodesign";
 
 const useStyles = makeStyles({
   provider: {
@@ -61,3 +61,5 @@ const DefaultWithHooks = () => {
 export const Default = {
   render: () => <DefaultWithHooks />,
 };
+
+export default DefaultWithHooks;

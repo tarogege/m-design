@@ -1,9 +1,9 @@
 import { makeStyles, mergeClasses } from "@griffel/react";
-import { MProviderProps, tokens } from "m-design";
+import { MProviderProps, tokens } from "maodesign";
 import { useThemeStyleTag } from "./useThemeStyleTag";
 
 const mDesignProviderClassName = {
-  root: "m-design-provider",
+  root: "maodesign-provider",
 };
 
 const useBaseStyles = makeStyles({

@@ -3,8 +3,8 @@ import {
   teamsDarkTheme,
   teamsHighContrastTheme,
   teamsLightTheme,
-} from "m-design";
-import type { ShadowTokens } from "m-design";
+} from "maodesign";
+import type { ShadowTokens } from "maodesign";
 
 const theme = {
   light: teamsLightTheme,

@@ -1,5 +1,5 @@
 import React from "react";
-import { Theme, webLightTheme } from "m-design";
+import { Theme, webLightTheme } from "maodesign";
 import { useStyles } from "./useStyles.styles";
 
 type ThemeProviderValue = Theme | Partial<Theme> | undefined;

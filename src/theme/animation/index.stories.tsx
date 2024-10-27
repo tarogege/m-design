@@ -4,7 +4,7 @@ import {
   teamsLightTheme as theme,
   DurationTokens,
   CurveTokens,
-} from "m-design";
+} from "maodesign";
 
 const meta = {
   title: "主题/animation",

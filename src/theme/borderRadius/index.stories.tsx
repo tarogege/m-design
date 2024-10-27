@@ -1,5 +1,5 @@
-import { teamsLightTheme } from "m-design";
-import { BorderRadiusTokens } from "m-design";
+import { teamsLightTheme } from "maodesign";
+import { BorderRadiusTokens } from "maodesign";
 
 const theme = teamsLightTheme;
 

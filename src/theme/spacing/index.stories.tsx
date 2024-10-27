@@ -2,7 +2,7 @@ import {
   HorizontalSpacingTokens,
   teamsLightTheme as theme,
   VerticalSpacingTokens,
-} from "m-design";
+} from "maodesign";
 
 const meta = {
   title: "主题/spacing",

@@ -1,4 +1,4 @@
-import { MProviderProps } from "m-design";
+import { MProviderProps } from "maodesign";
 import React from "react";
 import { createCSSRuleFromTheme } from "./createCSSRuleFromTheme";
 
@@ -39,7 +39,7 @@ export const useThemeStyleTag = ({ theme }: Partial<MProviderProps>) => {
   );
 
   // 根据theme生成css rule 字符串
-  const themeClassName = "m-design-provider" + escapeId;
+  const themeClassName = "maodesign-provider" + escapeId;
   const rule = React.useMemo(
     () => createCSSRuleFromTheme(themeClassName, theme),
     [themeClassName, theme]

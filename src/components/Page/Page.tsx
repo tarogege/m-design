@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header } from "m-design";
+import { Header } from "maodesign";
 import "./page.css";
 
 type User = {

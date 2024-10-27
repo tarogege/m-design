@@ -1,7 +1,7 @@
-import { Theme } from "m-design";
+import { Theme } from "maodesign";
 /**
  * 根据theme，创建一个css规则，
- * .m-design-provider0 {
+ * .maodesign-provider0 {
  *    --borderRadiusNone: 0;
  *    --borderRadiusSmall: 2px;
  *    略...

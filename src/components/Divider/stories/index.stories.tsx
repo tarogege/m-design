@@ -12,13 +12,6 @@ import DividerVariantRaw from "./DividerVariant.stories?raw";
 const meta = {
   title: "组件/Divider",
   component: Divider,
-  decorators: (Story) => {
-    return (
-      <MProvider theme={webLightTheme}>
-        <Story />
-      </MProvider>
-    );
-  },
 } satisfies Meta<typeof Divider>;
 
 export default meta;
@@ -30,6 +23,9 @@ type Story = StoryObj<typeof meta>;
     source: {
       code: DividerDefaultRaw,
     },
+    description: {
+      story: "默认divider",
+    },
   },
 };
 
@@ -37,6 +33,9 @@ type Story = StoryObj<typeof meta>;
   docs: {
     source: {
       code: DividerVerticalRaw,
+    },
+    description: {
+      story: "竖向divider",
     },
   },
 };

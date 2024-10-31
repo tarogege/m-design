@@ -1,5 +1,5 @@
 import { mergeClasses } from "@griffel/react";
-import React from "react";
+import * as React from "react";
 import {
   dividerClassName,
   useBaseStyle,
@@ -8,27 +8,25 @@ import {
 } from "./useDividerStyles.styles";
 import { ForwardRefComponent } from "../../utilities";
 
-export type DividerProps = {
+export type DividerProps = React.HTMLAttributes<HTMLDivElement> & {
   /**
-   * @description '分割线防线'
+   * 分隔线内内容的对齐方式。
    * @default 'horizental'
    */
   direction?: "horizental" | "vertical";
   /**
-   * @description '内容对齐方式'
+   * 内容对齐方式
    * @default 'center'
    */
   alignContent?: "start" | "end" | "center";
   /**
-   * @description '默认外观,线条颜色'。
-   *
+   * 默认外观,线条颜色
    * @default 'default'
    */
   appearance?: "brand" | "default" | "strong" | "subtle";
 
   /**
-   * @description 线型
-   *
+   * 线型
    * @default solid
    */
   variant?: "solid" | "dashed" | "dotted";

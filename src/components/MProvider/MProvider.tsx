@@ -8,7 +8,7 @@ const ThemeProvider = React.createContext<ThemeProviderValue>(undefined);
 export type MProviderProps = React.HTMLAttributes<
   React.ChildContextProvider<ThemeProviderValue>
 > & {
-  theme: ThemeProviderValue;
+  theme?: ThemeProviderValue;
 };
 
 const MProvider = ({

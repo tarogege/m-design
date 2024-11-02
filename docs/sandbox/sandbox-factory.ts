@@ -52,8 +52,6 @@ function openCodeSandbox({
   addHiddenInput(form, "parameters", parameters);
   addHiddenInput(form, "query", `file=${defaultFileToPreview}`);
 
-  console.log(parameters, "ppppp");
-
   document.body.appendChild(form);
   form.submit();
   document.body.removeChild(form);

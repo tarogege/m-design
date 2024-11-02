@@ -2,6 +2,7 @@ import type { Preview } from "@storybook/react";
 import useExportToSandbox from "../docs/sandbox/decorators/useExportToSandbox";
 import withMProvider from "../docs/src/withMProvider";
 import MaoDocsPage from "../docs/src/MaoDocsPage.stories";
+import { THEME_ID } from "../docs/theme-addon";
 
 const decorators = [withMProvider, useExportToSandbox];
 
@@ -31,6 +32,9 @@ const preview: Preview = {
   },
   tags: ["autodocs"],
   decorators,
+  initialGlobals: {
+    [THEME_ID]: undefined,
+  },
 };
 
 export default preview;

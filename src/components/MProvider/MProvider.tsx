@@ -20,7 +20,6 @@ const MProvider = ({
   // 1.将theme 放到context里面
   // 2.通过theme obj 构建css样式，定义css 变量
   const cls = useStyles({ className, theme });
-  console.log(cls, "clssss");
   return (
     <ThemeProvider.Provider value={theme} {...restProps}>
       <div className={cls}>{children}</div>

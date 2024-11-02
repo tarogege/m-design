@@ -43,8 +43,6 @@ export const getDependencies = (
     return depResult;
   }, {} as PackageDependencies);
 
-  console.log(depArrInCode, depObjInCode, "objjjj");
-
   return { ...depObjInCode, ...requiredDep };
 };
 

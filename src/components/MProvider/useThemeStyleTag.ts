@@ -7,7 +7,6 @@ const createStyleTag = (
   elementAttributes: Record<string, any>
 ) => {
   if (!target) {
-    console.log("something");
     return undefined;
   }
   const styleEl = target.createElement("style");

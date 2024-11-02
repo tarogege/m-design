@@ -1,11 +1,28 @@
 import * as React from "react";
 import { MProvider, webLightTheme } from "../../src";
+import { StoryContext } from "@storybook/types";
+import { THEME_ID, themes } from "../theme-addon";
+import { defaultTheme } from "../theme-addon/themes";
 
-const withMProvider = (Story) => {
-  const theme = webLightTheme;
+function findTheme(id) {
+  if (!id) {
+    return;
+  }
+
+  return themes.find((theme) => theme.id === id);
+}
+
+function getActiveTheme(globals) {
+  const themeId = globals[THEME_ID];
+  const { theme } = findTheme(themeId) ?? defaultTheme;
+  return { theme };
+}
+
+const withMProvider = (Story: React.ElementType, context: StoryContext) => {
+  const { theme } = getActiveTheme(context.globals);
 
   return (
-    <MProvider>
+    <MProvider theme={theme}>
       <div
         style={{
           padding: "48px 24px",

@@ -1,7 +1,6 @@
+/**
+ * Return type for `React.forwardRef`, including inference of the proper typing for the ref.
+ */
 export type ForwardRefComponent<Props> = React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<Props> & {
-    children?: JSX.Element | string;
-    style?: React.CSSProperties;
-    className?: string;
-  } & React.RefAttributes<Element>
+  Props & React.RefAttributes<Element> & React.HTMLAttributes<HTMLElement>
 >;
